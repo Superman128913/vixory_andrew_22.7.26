@@ -1,0 +1,86 @@
+label {
+    @apply block text-white text-sm font-bold mb-2;
+}
+.input-wrapper.alt {
+    @apply py-2;
+}
+.input-wrapper.alt input, .alt > textarea, .input-wrapper.alt select, .input-wrapper.alt .suffix {
+    background-color: #363636 !important;
+}
+input, input[type='text'], input[type='number'], input[type='search'], input[type='password'], input[type='email'], select, textarea {
+    @apply bg-transparent border text-white rounded p-1 w-full;
+    border-color: #525252;
+    flex:1 1 auto;
+    min-width:0px;
+}
+input::placeholder {
+    color: white;
+}
+
+
+input.has-suffix, input[type='text'].has-suffix, input[type='number'].has-suffix {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.suffix {
+    @apply border border-l-0 border-gray-alt2 rounded-r rounded-l-none p-1;
+}
+
+
+/* Algolia Search & College Search */
+.college-search-input {
+    padding-right:50px !important;
+}
+.college-search-icon {
+    top:6px;
+    position:absolute;
+    right:18px;
+}
+.places-wrapper {
+    .ap-dropdown-menu {
+        min-width:500px;
+        margin-top:12px;
+    }
+    .ap-footer {
+        display: flex;
+        float: right;
+        a {
+            margin: 0 0.4em;
+        }
+        a svg {
+            display: inline-block;
+        }
+    }
+}
+
+/** Select Styles **/
+select {
+    option {
+        background-color:black;
+    }
+}
+
+/* Boolean Input */
+.toggle__dot {
+    top: -.25rem;
+    left: -.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .toggle__dot {
+    transform: translateX(100%);
+    background-color: $accent;
+}
+
+/* Hide input number arrows */
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+    -moz-appearance: textfield;
+    }

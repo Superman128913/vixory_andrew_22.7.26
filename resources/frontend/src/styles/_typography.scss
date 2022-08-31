@@ -1,0 +1,102 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'NorwesterPro';
+    src: url('/fonts/NorwesterPro/woff2/NorwesterPro-Regular.woff2') format('woff2');
+    src: local('NorwesterPro'), url("/fonts/NorwesterPro/otf/NorwesterPro-Regular.otf") format("opentype");
+}
+.norwester {
+    font-family: 'NorwesterPro';
+}
+.dm-sans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+//DM Mono is used for buttons, menu items, etc
+button, .nav-item {
+    font-family: 'DM Mono', monospace;
+}
+
+.account-header {
+    font-family: 'DM Sans', sans-serif;
+    @apply text-white normal-case text-4xl font-normal; 
+}
+
+//DM Sans is used for standard text
+p, span, div {
+    color:white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+//Blog styling
+.post-content h1, .post-content h2, .post-content h3 {
+    color: white !important;
+    @apply text-2xl font-medium;
+}
+.post-content p {
+    padding-bottom: 1.4rem;
+}
+
+//Shared styles across all standard headings
+h1, .heading1, h2, .heading2, h3, h4, h5, h6 {
+    font-family: 'NorwesterPro';
+    @apply text-accent uppercase font-bold tracking-wider;
+}
+
+//Heading sizes
+h1, .heading1 {
+    @apply text-6xl;
+}
+
+.heading2 {
+    @apply text-4xl;
+}
+
+//Additional styling specific to individual types of headings
+h1, .heading1 {
+    @apply tracking-wide;
+    line-height:1;
+    text-transform:uppercase;
+    font-weight:300;
+}
+.minor-heading {
+    @apply tracking-wide text-lg font-bold uppercase;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 500 !important;
+    color:white !important;
+}
+
+//Document styling
+a.accent {
+    color:$accent;
+    text-decoration: underline;
+}
+.document p {
+    margin-top:0.2em;
+    margin-bottom:0.2em;
+}
+.document ul {
+    margin-left:2em;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    list-style:disc;
+}
+.document h2 {
+    font-size:1.5rem;
+    padding-top:2em;
+    padding-bottom:0.5em;
+}
+.document h3 {
+    font-size:1.2rem;
+    padding-top:1em;
+    padding-bottom:0.2em;
+}
+.document h4 {
+    padding-top:1em;
+    padding-bottom:0.5em;
+}
+.document h2, .document h3, .document h4 {
+    font-family: 'DM Sans', sans-serif !important;
+    color:white;
+}

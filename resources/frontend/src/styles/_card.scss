@@ -1,0 +1,26 @@
+.card {
+    @apply w-full mt-2 border rounded-sm;
+    background-color: rgba(0,0,0, .55);  
+    backdrop-filter: blur(9px);
+    border-color:$gray-alt2;
+
+    .card-body {
+        @apply p-4;
+    }
+}
+.card.bottom-accent {
+    @apply border-b-4;
+
+    border-left-color:$gray-alt2;
+    border-right-color:$gray-alt2;
+    border-top-color:$gray-alt2;
+    border-bottom-color:$accent;
+}
+
+.card-table{
+    @apply rounded-sm w-full shadow-md mt-2;
+}
+
+.card-header {
+    @apply p-4;
+}

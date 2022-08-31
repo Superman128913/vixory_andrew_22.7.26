@@ -1,0 +1,18 @@
+.noty-bar, .noty_theme__mint.noty_type__alert, .noty_theme__mint.noty_type__notification {
+    border-bottom:0px !important;
+    background-color:unset !important;
+}
+.noty_theme__mint.noty_type__success, .noty_theme__mint.noty_type__error {
+    @apply bg-gray-900 rounded-md;
+    background-color: unset;
+    border-bottom-width:2px;
+}
+.noty_theme__mint.noty_bar .noty_body {
+    font-size:18px;
+}
+.noty_body {
+    @apply bg-gray-900 text-accent z-10 relative rounded-md;
+}
+.noty_has_timeout .noty_progressbar{
+    display:none !important;
+}

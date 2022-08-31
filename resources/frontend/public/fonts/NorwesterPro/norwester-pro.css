@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Norwester Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro'),
+       local('NorwesterPro-Regular'),
+       url(../fonts/woff2/NorwesterPro-Regular.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Oblique';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Oblique'),
+       local('NorwesterPro-RegularOblique'),
+       url(../fonts/woff2/NorwesterPro-RegularOblique.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Regular';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Regular'),
+       local('NorwesterPro-Regular'),
+       url(../fonts/woff2/NorwesterPro-Regular.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Regular Oblique';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Regular Oblique'),
+       local('NorwesterPro-RegularOblique'),
+       url(../fonts/woff2/NorwesterPro-RegularOblique.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Rounded';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Rounded'),
+       local('NorwesterPro-Rounded'),
+       url(../fonts/woff2/NorwesterPro-Rounded.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Rounded Oblique';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Rounded Oblique'),
+       local('NorwesterPro-RoundedOblique'),
+       url(../fonts/woff2/NorwesterPro-RoundedOblique.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Square';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Square'),
+       local('NorwesterPro-Square'),
+       url(../fonts/woff2/NorwesterPro-Square.woff2)
+       format('woff2');
+}
+
+@font-face {
+  font-family: 'Norwester Pro Square Oblique';
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+  src: local('Norwester Pro Square Oblique'),
+       local('NorwesterPro-SquareOblique'),
+       url(../fonts/woff2/NorwesterPro-SquareOblique.woff2)
+       format('woff2');
+}
+
+
+.nw-regular {
+  font-family: 'Norwester Pro Regular';
+}
+
+.nw-regular-obl,
+.nw-regular em {
+  font-family: 'Norwester Pro Regular Oblique';
+  font-style: normal;
+}
+
+.nw-rounded {
+  font-family: 'Norwester Pro Rounded';
+}
+
+.nw-rounded-obl,
+.nw-rounded em {
+  font-family: 'Norwester Pro Rounded Oblique';
+}
+
+.nw-square {
+  font-family: 'Norwester Pro Square';
+}
+
+.nw-square-obl,
+.nw-square em {
+  font-family: 'Norwester Pro Square Oblique';
+}
+
+.nw-ss01,
+.nw-salt {
+  /* C ð J Ľ S Ü Z @ & */
+  font-feature-settings: 'ss01';
+}
+
+.nw-uppercase {
+  text-transform: uppercase;
+  /* Default to no ligatures */
+  font-variant-ligatures: none;
+}
+
+.nw-all-small-caps {
+  font-variant-caps: all-small-caps;
+}
+
+.nw-liga {
+  text-transform: uppercase;
+  /* CA CO. EA LA LI LL TH */
+  font-variant-ligatures: common-ligatures;
+}
+
+.nw-liga-off {
+  /* Turn common-ligatures off but keep discretionary */
+  font-feature-settings: 'liga' off;
+}
+
+.nw-dliga {
+  text-transform: uppercase;
+  /* FOR, OF THE, AND, etc */
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+.nw-lining-nums {
+  font-variant-numeric: lining-nums;
+}
+
+.nw-tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.nw-oldstyle-nums {
+  font-variant-numeric: oldstyle-nums;
+}

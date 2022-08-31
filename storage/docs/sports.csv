@@ -1,0 +1,7 @@
+name,classes,active
+Baseball,fad fa-baseball-ball,true
+Softball,fad fa-baseball,false
+Basketball,fad fa-basketball-hoop,true
+Football,fad fa-football-helmet,true
+Tennis,fad fa-tennis-ball,true
+Soccer,fad fa-futbol,true

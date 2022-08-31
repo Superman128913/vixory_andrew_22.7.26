@@ -1,0 +1,43 @@
+button, .btn {
+    @apply rounded border border-accent rounded-full px-4 py-1 text-white uppercase;
+    letter-spacing: 0.2em;
+
+    &:hover, &:hover {
+        background-color:rgba(222,174,83, 0.43);
+    }
+}
+
+button.search {
+    @apply bg-accent text-black m-0 relative;
+    min-width:10em;
+    top:1em;
+
+    @media (min-width: 768px) {
+        min-width:30em;
+    }
+}
+
+button.minimal, .btn.minimal {
+    @apply text-white bg-gray-900 px-4 pt-1 rounded-full border-0 flex m-3;
+}
+
+button.plain, .btn.plain {
+    @apply text-white px-4 pt-1 rounded-full border-0 flex m-3;
+
+    &:hover, &:hover {
+        background-color:unset !important;
+    }
+}
+
+button.white, .white.btn {
+    @apply border-white;
+}
+
+button.gray, .gray.btn {
+    @apply border-gray-alt2;
+
+    &:hover, &:hover {
+        border-color:rgba(222,174,83, 1);
+        background-color:rgba(222,174,83, 1);
+    }
+}

@@ -1,0 +1,1 @@
+@if(Auth::check())<img class="p-4" src="/images/logo/0.5x/vixory-horizontal-white@0.5x.png"/>@endif

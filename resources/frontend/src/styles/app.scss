@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// NPM Modules
+@import '~vuejs-noty/dist/vuejs-noty.css';
+@import '~animate.css/animate.min.css';
+
+// Variables
+@import 'images';
+@import 'misc';
+@import 'tag';
+@import 'variables';
+@import 'typography';
+@import 'card';
+@import 'forms';
+@import 'buttons';
+@import 'toastr';
+@import 'table';
+@import 'checkboxandradio';
+@import 'loader';
+@import 'notifications';
+@import 'cookie_consent';

@@ -1,0 +1,19 @@
+.nav-item .icon-item {
+    @apply relative rounded-full bg-white mx-2 text-accent items-center flex cursor-pointer justify-center;
+}
+.nav-item .icon-item.icon-only {
+    @apply px-1;
+    height:36px;
+    width:36px;
+}
+.notif-alert-badge {
+    background-color:#FF3B3B;
+    height: 22px;
+    min-width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}

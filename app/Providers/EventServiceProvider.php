@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Auth\Events\Verified;
+
+use App\Events\UserCreated as UserCreatedEvent;
+use App\Events\VideoUploaded;
+use App\Listeners\UserCreated;
+use App\Listeners\UserLoggedIn;
+
+use App\Listeners\HandleUserEmailVerification;
+
+class EventServiceProvider extends ServiceProvider
+{
+    /**
+     * The event listener mappings for the application.
+     *
+     * @var array
+     */
+    protected $listen = [
+        Registered::class => [
+            SendEmailVerificationNotification::class,
+        ],
+        Verified::class => [
+            HandleUserEmailVerification::class
+        ],
+        UserCreatedEvent::class => [
+            UserCreated::class
+        ],
+        VideoUploaded::class => [],
+        'Illuminate\Auth\Events\Login' => [
+            UserLoggedIn::class
+        ]
+    ];
+
+    /**
+     * Register any events for your application.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+
+        //
+    }
+}

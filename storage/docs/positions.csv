@@ -1,0 +1,39 @@
+name,key,sport
+First,baseball_first,Baseball
+Second,baseball_second,Baseball
+Short Stop,baseball_short_stop,Baseball
+Third,baseball_third,Baseball
+Outfield (Right),baseball_outfield_right,Baseball
+Outfield (Left),baseball_outfield_left,Baseball
+Outfield (Center),baseball_outfield_center,Baseball
+Pitcher,baseball_pitcher,Baseball
+Catcher,baseball_catcher,Baseball
+Point Guard (PG),basketball_point_guard,Basketball
+Shooting Guard (SG),basketball_shooting_guard,Basketball
+Power Forward (PF),basketball_power_forward,Basketball
+Small Forward (SF),basketball_small_forward,Basketball
+Center ©,basketball_center,Basketball
+Quarterback (QB),football_quarterback,Football
+Running Back (RB),football_running_back,Football
+Wide Receiver (WR),football_wide_receiver,Football
+Tight End (TE),football_tight_end,Football
+Offensive Tackle (T),football_offensive_tackle,Football
+Offensive Guard (G),football_offensive_guard,Football
+Center ©,football_center,Football
+Defensive Lineman (DL),football_defensive_lineman,Football
+Linebacker (LB),football_linebacker,Football
+Safety (S),football_safety,Football
+Cornerback (CB),football_cornerback,Football
+Kicker,football_kicker,Football
+Punter,football_punter,Football
+Goalkeeper,soccer_goalkeeper,Soccer
+Wing-Back,soccer_wing_back,Soccer
+Full-Back,soccer_full_back,Soccer
+Sweeper,soccer_sweeper,Soccer
+Centre-Back,soccer_centre_back,Soccer
+Defensive Midfielder,soccer_defensive_midfielder,Soccer
+Winger,soccer_winger,Soccer
+Central Midfielder,soccer_central_midfielder,Soccer
+Striker,soccer_striker,Soccer
+Attacking Midfielder,soccer_attacking_midfielder,Soccer
+Forward,soccer_forward,Soccer

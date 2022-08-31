@@ -1,0 +1,87 @@
+@media (max-width: 640px) {
+    .max-height {
+        max-height: 6rem;
+        overflow:hidden;
+        position:relative;
+    }
+    .max-height > .expand {
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        text-align: center; 
+        margin: 0; padding: 30px 0; 
+        
+        /* "transparent" only works here because == rgba(0,0,0,0) */
+        background-image: linear-gradient(to bottom, transparent, rgba(36, 36, 36, var(--bg-opacity)));
+    }
+    .max-height > .expand > .text {
+        position:relative;
+        top:28px;
+    }
+}
+.heading-hr {
+    @apply border-accent my-6;
+    max-width:16rem;
+}
+.top-gradient {
+    position:absolute;
+    height:100px;
+    width:100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.boxed {
+    @apply mx-auto;
+    max-width: 88rem;
+}
+body {
+    background-color:#000000;
+}
+hr {
+    @apply bg-gray-alt2 border-gray-alt2 text-gray-alt2;
+}
+.bg-hazy {
+    @apply border-gray-alt2 border rounded-sm;
+    background-color: rgba(0,0,0, .55);  
+    backdrop-filter: blur(9px);
+}
+.nothing-message {
+    @apply italic p-10 text-xl text-center w-full;
+}
+
+//Icons
+.standard-icon {
+    width:30px;
+    @apply inline-block text-center px-1 cursor-pointer text-accent text-xl;
+}
+
+//Filter page styling
+.range-filter {
+    input {
+        flex: 1 1 auto;
+        min-width:0px;
+        width:auto !important;
+    }
+}
+.filter-field {
+    @apply col-span-12;
+
+    @media  (min-width: 768px) {
+        @apply col-span-3;
+    }
+
+    @media (min-width: 1024px) {
+        @apply col-span-2;
+    }
+}
+.filter-field-wide {
+    @apply col-span-12;
+}
+.filter-wrapper {
+    @apply grid grid-cols-12;
+    row-gap: 0.5rem;
+
+    @media (min-width: 768px) { 
+        column-gap: 3rem;
+    }
+}
